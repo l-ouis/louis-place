@@ -6,8 +6,12 @@ import ProjectPanel from "../components/projectPanel";
 import { useState, useEffect } from "react";
 import { useMobile } from "../utils/useMobile";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import { Title } from "@mui/icons-material";
 
 interface PageProps {
+    title: string;
+    link?: string;
+    code?: string;
     content: string;
 }
 
@@ -55,7 +59,7 @@ export default function PageTemplate(props: PageProps) {
       <div className={`overflow-hidden overscroll-none transition-opacity duration-500 ${start ? 'opacity-100' : 'opacity-0'}`}>
         <ScrollArea className="h-[100vh] w-[100vw]" type="never">
           <div className="h-[100%] w-[100%] flex items-center justify-center">
-            <ProjectPanel content={props.content} />
+            <ProjectPanel title={props.title} link={props.link} code={props.code} content={props.content} />
           </div>
         </ScrollArea>
       </div>

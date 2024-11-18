@@ -1,6 +1,4 @@
 export const content = `
-
-### DDNet
 DDNet is a very special game to me -- one that I picked up as a middle schooler, and stuck with for years.
 Apart from the many friends I've made through the game, I've also learned a lot about the developer community of open-source games.
 It's extremely heartwarming to see how the game has grown over time, from a couple hundred players to over ten thousand, all because of the 

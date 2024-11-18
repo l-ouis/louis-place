@@ -1,6 +1,4 @@
 export const content = `
-
-### Duet
 A MIDI transformer model that can be used to generate harmonies based off a given melody. I built this with a partner in a month for Brown CS1470.
 
 One of the hardest parts of any machine learning model regarding music is how to represent data. Music can take lots of form - to our ears, sound is a very continuous motion,

@@ -1,6 +1,4 @@
 export const content = `
-
-### louis.place
 A personal website using TypeScript, ReactJS, and Next.js.
 
 It uses [Mantine] for components and [Marked] for posts.
