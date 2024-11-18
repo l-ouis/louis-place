@@ -36,6 +36,25 @@ const ProjectPanel: React.FC<ProjectPanelProps> = (props: ProjectPanelProps) => 
             { 
             mobile ?
             <div className="overflow-hidden bg-white mt-[15vh] pb-[50px] w-[100%] pt-[3vh] px-[2vw] rounded-lg shadow-md border border-gray-200">
+                                <Group>
+                    <Title>
+                        {props.title}
+                    </Title>
+                    {props.link && 
+                        <Button onClick={(e) => handleButtonClick(e, props.link!)}
+                            color="rgba(235, 223, 204, 1)" c="rgba(99, 86, 77, 1)"
+                        >
+                            <LanguageIcon />
+                        </Button>
+                    }
+                    {props.code && 
+                        <Button onClick={(e) => handleButtonClick(e, props.code!)}
+                            color="rgba(235, 223, 204, 1)" c="rgba(99, 86, 77, 1)"
+                        >
+                            <CodeIcon />
+                        </Button>
+                    }
+                </Group>
                 <TypographyStylesProvider>
                     <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
                 </TypographyStylesProvider>
