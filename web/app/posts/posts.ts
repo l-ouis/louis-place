@@ -10,7 +10,7 @@ interface Post {
 
 const posts: Post[] = [
     {
-        title: "24Cast",
+        title: "24cast.org",
         desc: "An open-source, accurate elections prediction model and application stack",
         site: "https://24cast.org",
         code: "https://github.com/BPR-Data-Team",
